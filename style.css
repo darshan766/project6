@@ -1,0 +1,158 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Background Image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img1.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Make the background image fixed during scrolling */
+    color: #ffffff; /* Text color to contrast the background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Content Sections */
+.content-section {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #ffffff; /* Text color for better readability */
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Countdown Timer */
+.countdown {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #ffcc00;
+}
+
+.countdown h2 {
+    margin-bottom: 10px;
+    color: #ff5722;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* RSVP Section */
+.rsvp {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.rsvp h2 {
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+.rsvp input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rsvp button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rsvp button:hover {
+    background-color: #388e3c;
+}
+
+
+/* Event Details Box */
+.event-details {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #333; /* Dark text for readability */
+}
+
+.event-details h2 {
+    margin-bottom: 15px;
+    color: #ff5722;
+}
+
+.event-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}

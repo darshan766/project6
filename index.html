@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><button onclick="showSection('home')">Home</button></li>
+            <li><button onclick="showSection('about')">About Us</button></li>
+            <li><button onclick="showSection('contact')">Contact</button></li>
+            <li><button onclick="showSection('schedule')">Schedule</button></li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <div id="home" class="content-section active">Welcome to Home!</div>
+    <div id="about" class="content-section hidden">About Us content.</div>
+    <div id="contact" class="content-section hidden">Contact details here.</div>
+    <div id="schedule" class="content-section hidden">Event Schedule<br><br>9:00 AM - 9:30 AM	Registration <br>
+        9:30 AM - 10:15 AM	Opening Keynote<br>10.15 AM - 12.00 PM  Workshop<br>12:00 PM - 1:00 PM	Lunch Break<br>1.00 PM -4.30 PM   Presentation<br>
+        4.30 PM - 5.00 PM  Evening Break<br>5.00 PM -6.00 PM  Closing Ceremony </div>
+
+    <!-- Event Details Box -->
+    <section class="event-details">
+        <h2>Event Details</h2>
+        <p><strong>Name:</strong> KERALA TECH FEST</p>
+        <p><strong>Date:</strong> 25th March 2025</p>
+        <p><strong>Time:</strong> 10:00 AM to 6:00 PM</p>
+        <p><strong>Location:</strong> Downtown Convention Center</p>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown">
+        <h2>Countdown to the Event:</h2>
+        <div id="timer">
+            <span id="days"></span>days 
+            <span id="hours"></span>hours 
+            <span id="minutes"></span>minutes 
+            <span id="seconds"></span>seconds
+        </div>
+    </section>
+
+    <section class="rsvp">
+        <h2>RSVP</h2>
+        <p>Please confirm your attendance:</p>
+        <form>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="submit">RSVP</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
